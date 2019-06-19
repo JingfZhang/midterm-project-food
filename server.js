@@ -39,9 +39,17 @@ app.use(express.static("public"));
 app.use("/api/users", usersRoutes(knex));
 
 // Home page
-app.get("/", (req, res) => {
+app.get("/home", (req, res) => {
   res.render("index");
 });
+// Menu page for order
+app.get("/order", (req, res) => {
+  res.render("order");
+})
+// Cart page
+app.get("/cart", (req, res) => {
+  res.render("cart");
+})
 
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
