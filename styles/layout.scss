@@ -1,7 +1,14 @@
+$font-body:    'Roboto Condensed', sans-serif;
+$primary-color:#244751;
+$container-color:#FFFFFF;
+
 body {
   background-color: #EEE;
-
-  h1 {
-    color: #244751;
-  }
+  
+    img{
+      
+      width: 100%;
+      height:auto;
+    }
+  
 }
