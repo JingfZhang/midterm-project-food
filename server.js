@@ -46,13 +46,18 @@ app.get("/", (req, res) => {
 });
 
 // Menu page for order
-app.get("/order", (req, res) => {
+app.get("/menu", (req, res) => {
   res.render("order");
 })
 
 // Cart page
 app.get("/cart", (req, res) => {
   res.render("cart");
+})
+
+// Checkout page
+app.get("/checkout", (req, res) => {
+  res.render("checkout");
 })
 
 app.listen(PORT, () => {
