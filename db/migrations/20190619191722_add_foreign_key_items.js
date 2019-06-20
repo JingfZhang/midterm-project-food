@@ -2,7 +2,8 @@
 exports.up = function(knex, Promise) {
   return Promise.all([
     knex.schema.alterTable('items', function(table){
-      table.foreign('category_id').references('id').inTable('category');
+      table.integer('category_id');
+      table.foreign('category_id').references('category.id');
     })
   ])
 };
@@ -10,7 +11,7 @@ exports.up = function(knex, Promise) {
 exports.down = function(knex, Promise) {
   return Promise.all([
     knex.schema.alterTable('items', function(table){
-      table.dropForeign(columns, 'category_id');
+      table.dropColumn('category_id');
     })
   ])
 };

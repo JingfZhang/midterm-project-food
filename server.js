@@ -36,10 +36,10 @@ app.use("/styles", sass({
 app.use(express.static("public"));
 
 // Mount all resource routes
-app.use("/api/users", usersRoutes(knex));
+app.use("/api/items", usersRoutes(knex));
 
 // Home page
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   res.render("index");
 });
 // Menu page for order

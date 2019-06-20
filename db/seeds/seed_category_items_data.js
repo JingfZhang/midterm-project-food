@@ -44,6 +44,4 @@ exports.seed = function(knex, Promise) {
         knex('items').insert({name: 'Water', category_id: 3, price: 1.49}),
 
       ]);
-
-      console.log(category)
 };
