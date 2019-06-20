@@ -2,6 +2,18 @@
 
 require('dotenv').config();
 
+// const knex = require("knex")({
+//   client: "pg",
+//   connection: {
+//     user     : process.env.DB_USER,
+//     password : process.env.DB_PASS,
+//     database : process.env.DB_NAME,
+//     host     : process.env.DB_HOST,
+//     port     : process.env.DB_PORT,
+//     ssl      : process.env.DB_SSL
+//   },
+// });
+
 const PORT        = process.env.PORT || 8080;
 const ENV         = process.env.ENV || "development";
 const express     = require("express");
@@ -15,7 +27,7 @@ const morgan      = require('morgan');
 const knexLogger  = require('knex-logger');
 
 // Seperated Routes for each Resource
-const usersRoutes = require("./routes/users");
+const usersRoutes = require("./routes/menu");
 
 // Load the logger first so all (static) HTTP requests are logged to STDOUT
 // 'dev' = Concise output colored by response status for development use.
@@ -47,7 +59,7 @@ app.get("/", (req, res) => {
 
 // Menu page for order
 app.get("/menu", (req, res) => {
-  res.render("order");
+  res.render("menu");
 })
 
 // Cart page
