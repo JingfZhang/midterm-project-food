@@ -9,11 +9,6 @@ $button-color:#DDA448;
 body {
   background-color: $back-color;
   font-family: $font-body;
-    img{
-      width: 100%;
-      height: 100%;
-    }
-  
 }
 
 @import 'partials/nav';
