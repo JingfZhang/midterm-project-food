@@ -1,7 +1,29 @@
 body {
   background-color: #EEE;
+  font-family: 'Roboto Condensed', sans-serif;
 
   h1 {
     color: #244751;
   }
+}
+
+#cart-button{
+  float: right;
+  left: 75%;
+  width: 10%;
+  // height: 19%;
+  // top: -85px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: large;  
+
+  // border-radius: 10px;
+  // height: 60px;
+  // background-color: lightcyan;
+  // color: black;
+  // border-color: black;
+  // margin-top: 10px;
+  // font-weight: bold;
+  // font-size: large;
+  // float: right;
 }
