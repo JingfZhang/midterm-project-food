@@ -38,14 +38,18 @@ app.use(express.static("public"));
 // Mount all resource routes
 app.use("/api/items", usersRoutes(knex));
 
+// <-------------GET ROUTES------------------>
+
 // Home page
 app.get("/", (req, res) => {
   res.render("index");
 });
+
 // Menu page for order
 app.get("/order", (req, res) => {
   res.render("order");
 })
+
 // Cart page
 app.get("/cart", (req, res) => {
   res.render("cart");
