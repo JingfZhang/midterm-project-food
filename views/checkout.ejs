@@ -28,7 +28,29 @@
         <a href=/menu><button id="clear-order-button" type="submit" class="btn btn-danger">CLEAR ORDERS</button></a>
     </div> -->
 
-    <section id="cart-body">
+    <section id="checkout-container">       
+
+        <!-- <div class="mb-3">
+                <label for="phone">Phone Number
+                </label>
+                <input type="tel" class="form-control" id="phone-numher" placeholder="(xxx)-xxx-xxxx" required>
+                <div class="invalid-feedback">
+                    Please enter a valid phone number.
+                </div>
+        </div>       -->
+        
+        <form method="POST" action="/login">
+            <label for="name">Name
+            </label>
+            <input class="form-control" type="text" id="name" placeholder="name" style="width: 300px; margin: 1em">
+            <label for="phone">Phone Number
+            </label>
+            <input class="form-control" type="phone-number" id="phone-number" placeholder="(xxx)-xxx-xxxx" style="width: 300px; margin: 1em">
+            <div class="invalid-feedback">
+                Please enter a valid phone number.
+            </div>
+            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+         </form>    
 
     </section>
 
