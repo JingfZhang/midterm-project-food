@@ -10,7 +10,7 @@ $(() => {
 
       $header.append(item["name"]);
       // $p.append(item["description"]);
-      $footer.append(item["price"]);
+      $footer.append("$ " + item["price"]);
 
       $("#menu_body").append($header);
       // $("#menu_body").append($p);
