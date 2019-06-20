@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/partials/menu.css" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
@@ -18,17 +19,17 @@
     <!--This is the nav bar for the menu in /order-->
     <nav class="nav">
       <img class="logo">
-      <span class="menu_header">MENU</span>
-      <a href=/cart><button type="button" id="cart_button"><i class="fas fa-shopping-cart fa-2x"></i>Cart</button></a>
+      <span class="menu_header">FOODALICIOUS</span>
+      <a href=/cart><button type="button" id="cart_button"><i class="fas fa-utensils fa-lg"></i>&nbspORDER</button></a>
     </nav>
     <!--Use (app.js or create a new js file) to append the itemsin table to main-->
-    <section id="menu_body">
-      <div id="pizza"></div>
-      <div id="pasta"></div>
-      <div id="burger"></div>
-      <div id="wings"></div>
-      <div id="pop"></div>
-    </section>
+    <main id="menu_body" class="cat-name cat-pi text-center">
+      <section id="pizza" class="foods">PIZZA</section>
+      <section id="pasta" class="foods">PASTA</section>
+      <section id="burger" class="foods">BURGER</section>
+      <section id="wings" class="foods">WINGS</section>
+      <section id="pop" class="foods">POP</section>
+    </main>
 
   </body>
 </html>
