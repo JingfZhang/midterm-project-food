@@ -1,0 +1,34 @@
+body{
+    .motto{
+        z-index: 9999;
+        position: absolute;
+        top:8rem;
+        font-family: $font-logo;
+        font-style: italic;
+        font-size: 5rem;
+        left:20%;
+        padding:1rem;
+        background-color: rgba($color: #ffffff, $alpha: 0.6);
+    }
+    .carousel{
+        .btn{
+            background-color: $nav-color;
+            font-size: 4rem;
+            color: $button-color;
+            z-index: 9999;
+            position: absolute;
+            top: 30rem;
+            left:20%;
+            font-family: $font-body;
+        }
+        .btn:hover{
+            background-color: $nav-color;
+            color: #ffffff;
+        }
+        img{
+            opacity: 0.8;
+            width: 100%;
+            height:100%;
+        }
+    }
+}
