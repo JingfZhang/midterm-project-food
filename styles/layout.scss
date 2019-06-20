@@ -1,14 +1,20 @@
 $font-body:    'Roboto Condensed', sans-serif;
+$font-logo: 'Roboto Slab', serif;
 $primary-color:#244751;
 $container-color:#FFFFFF;
+$nav-color:#3C4859;
+$back-color: #EEE;
+$button-color:#DDA448;
 
 body {
-  background-color: #EEE;
-  
+  background-color: $back-color;
+  font-family: $font-body;
     img{
-      
       width: 100%;
-      height:auto;
+      height: 100%;
     }
   
 }
+
+@import 'partials/nav';
+@import 'partials/home'

@@ -1,0 +1,14 @@
+nav {
+    height: 6rem;
+    background-color:$nav-color;
+    z-index: 1;
+
+    .nav-logo{
+        font-family: $font-logo;
+        font-size: 3rem;
+        color: $button-color;
+        font-style: italic;
+        font-weight: 100;
+    }
+
+}
