@@ -1,0 +1,25 @@
+body{
+    .motto{
+        z-index: 9999;
+        position: absolute;
+        top:8rem;
+        font-family: $font-logo;
+        font-style: italic;
+        font-size: 6rem;
+        left:25%;
+    }
+    .order-button{
+        font-size: 4rem;
+        color: $button-color;
+        z-index: 9999;
+        position: absolute;
+        top: 3rem;
+        right:10%;
+        font-family: $font-body;
+        font-size: 6rem;
+    }
+    img{
+        opacity: 0.8;
+    }
+
+}
