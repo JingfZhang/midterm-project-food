@@ -39,7 +39,7 @@ app.use(express.static("public"));
 app.use("/api/users", usersRoutes(knex));
 
 // Home page
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   res.render("index");
 });
 // Menu page for order
