@@ -2,7 +2,8 @@
 exports.up = function(knex, Promise) {
   return Promise.all([
     knex.schema.createTable('category', function(table){
-      table.increments('id').primary();
+      // table.increments('id').primary();
+      table.integer('id').primary();
       table.string('name');
     })
   ])

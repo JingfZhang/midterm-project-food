@@ -10,7 +10,6 @@ $(() => {
       var $button = $(`<button type='submit' data-id='${item.id}' data-name='${item.name}' data-price='${item.price}'>`).addClass("add");
       var $buttonRemove = $(`<button type='submit' data-id='${item.id}' data-name='${item.name}' data-price='${item.price}'>`).addClass("remove");
 
-
       $header.append(item["name"]);
       // $p.append(item["description"]);
       $footer.append("$ " + item["price"]);
@@ -19,14 +18,29 @@ $(() => {
       $footer.append($button);
       $footer.append($buttonRemove);
 
-      $("#menu_body").append($header);
+      if(item["category_id"] == 1){
+        $("#pizza").append($header);
+        $("#pizza").append($footer);
+      } else if (item["category_id"] == 2){
+        $("#pasta").append($header);
+        $("#pasta").append($footer);
+      } else if (item["category_id"] == 3){
+        $("#burger").append($header);
+        $("#burger").append($footer);
+      } else if (item["category_id"] == 4){
+        $("#pop").append($header);
+        $("#pop").append($footer);
+      } else if (item["category_id"] == 5){
+        $("#wings").append($header);
+        $("#wings").append($footer);
+      }
+      // $("#menu_body").append($header);
       // $("#menu_body").append($p);
-      $("#menu_body").append($footer);
+      // $("#menu_body").append($footer);
 
     }
-  });;
+  });
 
-  localStorage.clear();
 
   $("#menu_body").on("click", ".add", function (event) {
     event.preventDefault()

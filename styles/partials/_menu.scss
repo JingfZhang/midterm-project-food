@@ -1,0 +1,31 @@
+body {
+  nav {
+    width: -webkit-fill-available;
+    height: 6rem;
+    background-color:$nav-color;
+    z-index: 1;
+    font-family: $font-logo;
+    font-size: 4rem;
+    color: $button-color;
+    font-style: italic;
+    font-weight: 100;
+
+    button {
+      position: relative;
+      left:1000px;
+      font-size: 30px;
+      margin-top: 20px;
+      color: $button-color;
+      background-color: $nav-color;
+      border-color: $nav-color;
+    }
+
+  }
+  main {
+    color: $button-color;
+    section {
+      font-size: 30px;
+    }
+  }
+
+}
