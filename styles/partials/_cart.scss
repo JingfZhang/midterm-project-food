@@ -1,13 +1,10 @@
 body {
     background-color: cyan;
     font-family: 'Roboto Condensed', sans-serif;
-  
-    h1 {
-      color: #244751;
-    }
+
   }
   
-  #checkout-button {
+  #checkout {
     float: right;
     border-radius: 20px;
     font-weight: bold;
@@ -16,13 +13,17 @@ body {
     margin-top: 20px;
     height: 50px;
     background-color: lightcyan;
+    font-style: normal;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: blueviolet;
   }
 
   #clear-order-button {
     float: right;
     width: 10%;
-    border-radius: 20px;
+    border-radius: 25px;
     font-weight: bold;
     font-size: large;
-    margin-top: 2%;
+    margin-top: 10px;
+    margin-right: 10px;
   }
