@@ -1,21 +1,18 @@
 body {
-    background-color: cyan;
+    background-color: white;
     font-family: 'Roboto Condensed', sans-serif;
-
-  }
+    font-family: $font-logo;
   
   #checkout {
-    float: right;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: large;  
+    float: right; 
     margin-right: 10%;
-    margin-top: 20px;
+    margin-top: 30px;
     height: 50px;
-    background-color: lightcyan;
-    font-style: normal;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: blueviolet;
+    font-style: italic;
+    font-size: 30px;
+    color: $button-color;
+    background-color: $nav-color;
+    border-color: $nav-color;
   }
 
   #clear-order-button {
@@ -27,3 +24,5 @@ body {
     margin-top: 10px;
     margin-right: 10px;
   }
+
+}
