@@ -1,4 +1,9 @@
-body {
+body#menu{
+  background-image: url("/image/menu_restaurant.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   nav {
     width: -webkit-fill-available;
     height: 6rem;
@@ -10,37 +15,126 @@ body {
     font-style: italic;
     font-weight: 100;
 
-    button {
+    .menu_header {
+      background-color: transparent;
+      border: none;
+      font-family: "Roboto Slab", serif;
+      font-size: 4rem;
+      color: #DDA448;
+      font-style: italic;
+      font-weight: 100;
+      padding-top: 8px;
+      padding-right: 4px;
+    }
+
+    #cart_button {
       position: relative;
       left:1000px;
       font-size: 30px;
       margin-top: 20px;
       color: $button-color;
-      background-color: $nav-color;
+      background-color: transparent;
       border-color: $nav-color;
     }
 
   }
   main {
-    color: $button-color;
+    background-color: black;
+    color: white;
     button {
       color: $button-color;
-      border-color: white;
+      border: none;
       font-family: $font-logo;
       font-size: 30px;
       font-style: italic;
+      background-color: Transparent;
     }
     .add {
-        font-family: inherit;
-        font-style: normal;
+      font-family: inherit;
+      font-style: normal;
+      background-color: transparent;
       }
     .remove {
       font-family: inherit;
       font-style: normal;
+      background-color: transparent;
     }
-    section {
+    section.pizza {
       font-size: 30px;
+      background-image: url("/image/menu_pizza.jpg") ;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      container {
+        display: block;
+        background-color: rgba(0,0,0,.5);
+        /* opacity: 0.5; */
+        width: 500px;
+      }
+
     }
+    section.pasta {
+      font-size: 30px;
+      background-image: url("/image/menu_pasta.jpg") ;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding-bottom: 500px;
+      container {
+        display: block;
+        background-color: rgba(0,0,0,.5);
+        /* opacity: 0.5; */
+        width: 500px;
+      }
+    }
+    section.burger {
+      font-size: 30px;
+      background-image: url("/image/menu_burger.jpg") ;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding-bottom: 500px;
+      container {
+        display: block;
+        background-color: rgba(0,0,0,.5);
+        /* opacity: 0.5; */
+        width: 500px;
+      }
+    }
+    section.wings {
+      font-size: 30px;
+      background-image: url("/image/menu_wings.jpg") ;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding-bottom: 400px;
+      container {
+        display: block;
+        background-color: rgba(0,0,0,.5);
+        /* opacity: 0.5; */
+        width: 500px;
+      }
+    }
+    section.pop {
+      font-size: 30px;
+      background-image: url("/image/menu_pop.jpg") ;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding-bottom: 70px;
+      container {
+        display: block;
+        background-color: rgba(0,0,0,.5);
+        /* opacity: 0.5; */
+        width: 500px;
+      }
+    }
+
   }
 
 }

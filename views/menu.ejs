@@ -5,9 +5,9 @@
 
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/partials/menu.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/layout.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto+Slab:400,700|Roboto:400,700&display=swap" rel="stylesheet">
 
     <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
     <script type="text/javascript" src="/scripts/menu_app.js"></script>
@@ -15,25 +15,25 @@
 
   </head>
 
-  <body>
+  <body id="menu">
     <!--This is the nav bar for the menu in /order-->
     <nav class="nav">
       <img class="logo">
-      <span class="menu_header">FOODALICIOUS</span>
+      <a href=/ ><button class="menu_header">FOODALICIOUS</button></a>
       <a href=/cart><button type="button" id="cart_button"><i class="fas fa-utensils fa-lg"></i>&nbspORDER</button></a>
     </nav>
     <!--Use (app.js or create a new js file) to append the itemsin table to main-->
-    <main id="menu_body" class="cat-name cat-pi text-center">
+    <main id="menu_main" class="cat-name cat-pi text-center">
       <button class="pizza">PIZZA</button>
       <button class="pasta">PASTA</button>
       <button class="burger">BURGER</button>
       <button class="wings">WINGS</button>
-      <button class="pop">POP</button>
-      <section id="pizza" class="foods pizza"></section>
-      <section id="pasta" class="foods pasta"></section>
-      <section id="burger" class="foods burger"></section>
-      <section id="wings" class="foods wings"></section>
-      <section id="pop" class="foods pop"></section>
+      <button class="pop">BEVERAGE</button>
+      <section class="foods pizza"></section>
+      <section class="foods pasta"></section>
+      <section class="foods burger"></section>
+      <section class="foods wings"></section>
+      <section class="foods pop"></section>
     </main>
 
   </body>
