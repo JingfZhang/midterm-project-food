@@ -77,6 +77,35 @@ app.get("/checkout", (req, res) => {
   res.render("checkout");
 })
 
+// Confirmation page
+app.get("/confirm", (req, res) => {
+  // Send SMS to customer through Twilio
+  // client.messages
+  // .create({
+  //     body: 'Thank you for your purchase. It will take 30 minutes for the order to be ready.',
+  //     from: '+15067990251',
+  //     to: '+16476464578'
+  // })
+  // .then(message => console.log("This is a message for customer :" + message))
+
+  res.render("confirm");
+})
+
+// <-------------POST ROUTES------------------>
+
+app.post("/checkout", (req, res) => {
+  //   // Send SMS to restaurant through Twilio
+  //   client.messages
+  //   .create({
+  //       body: 'You received a new order. Please check the app for order details.',
+  //       from: '+16042659409',
+  //       to: '+16477600143'
+  //   })
+  //   .then(message => console.log("This is a message for restaurant :" + message))
+  // res.redirect("/");
+})
+
+
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
-});
+});           
