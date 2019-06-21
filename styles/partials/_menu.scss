@@ -1,0 +1,46 @@
+body {
+  nav {
+    width: -webkit-fill-available;
+    height: 6rem;
+    background-color:$nav-color;
+    z-index: 1;
+    font-family: $font-logo;
+    font-size: 4rem;
+    color: $button-color;
+    font-style: italic;
+    font-weight: 100;
+
+    button {
+      position: relative;
+      left:1000px;
+      font-size: 30px;
+      margin-top: 20px;
+      color: $button-color;
+      background-color: $nav-color;
+      border-color: $nav-color;
+    }
+
+  }
+  main {
+    color: $button-color;
+    button {
+      color: $button-color;
+      border-color: white;
+      font-family: $font-logo;
+      font-size: 30px;
+      font-style: italic;
+    }
+    .add {
+        font-family: inherit;
+        font-style: normal;
+      }
+    .remove {
+      font-family: inherit;
+      font-style: normal;
+    }
+    section {
+      font-size: 30px;
+    }
+  }
+
+}

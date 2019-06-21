@@ -11,5 +11,8 @@ body {
   font-family: $font-body;
 }
 
+@import 'partials/menu';
 @import 'partials/nav';
-@import 'partials/home'
+@import 'partials/home';
+@import 'partials/cart';
+@import 'partials/checkout';

@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: $font-logo;
+
+  #submit {
+      width: 8%;
+      border-radius: 25px;
+      font-weight: bold;
+      margin-left: 15px;
+  }
+
+  .confirm-container {
+      color: blue;
+      display: none;
+  }
+
+  .error-message {
+      color: red;
+      font-size: medium;
+      display: none;
+      margin: 0;
+      padding-bottom: 5px;
+      font-weight: bold;
+      font-style: italic;
+  }
+
+}
