@@ -94,15 +94,15 @@ app.get("/confirm", (req, res) => {
 // <-------------POST ROUTES------------------>
 
 app.post("/checkout", (req, res) => {
-  //   // Send SMS to restaurant through Twilio
-  //   client.messages
-  //   .create({
-  //       body: 'You received a new order. Please check the app for order details.',
-  //       from: '+16042659409',
-  //       to: '+16477600143'
-  //   })
-  //   .then(message => console.log("This is a message for restaurant :" + message))
-  // res.redirect("/");
+    // Send SMS to restaurant through Twilio
+    // client.messages
+    // .create({
+    //     body: 'You received a new order. Please check the app for order details.',
+    //     from: '+16042659409',
+    //     to: '+16477600143'
+    // })
+    // .then(message => console.log("This is a message for restaurant :" + message))
+  res.redirect("/confirm");
 })
 
 
