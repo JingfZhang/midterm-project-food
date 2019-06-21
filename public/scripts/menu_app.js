@@ -6,6 +6,7 @@ $(() => {
     for(item of items) {
       var $header = $("<header>");
       // var $p = $("<p>");
+      var $container = $("<container>").addClass("container")
       var $footer = $("<footer>");
 
       var $button = $(`<button type='submit' data-id='${item.id}' data-name='${item.name}' data-price='${item.price}'>`).addClass("add");
@@ -14,29 +15,26 @@ $(() => {
 
       $header.append(item["name"]);
       // $p.append(item["description"]);
-      $footer.append("$ " + item["price"]);
-      $button.append("ADD");
-      $buttonRemove.append("REMOVE");
+      $header.append("     $" + item["price"]);
+      $button.append("+");
+      $buttonRemove.append("-");
       $footer.append($button);
-      $footer.append($buttonRemove);
       $footer.append($counter);
+      $footer.append($buttonRemove);
+      $container.append($header)
+      $container.append($footer)
       $(".item_counter").html(0);
 
       if(item["category_id"] == 1){
-        $("#pizza").append($header);
-        $("#pizza").append($footer);
+        $("section.pizza").append($container);
       } else if (item["category_id"] == 2){
-        $("#pasta").append($header);
-        $("#pasta").append($footer);
+        $("section.pasta").append($container);
       } else if (item["category_id"] == 3){
-        $("#burger").append($header);
-        $("#burger").append($footer);
+        $("section.burger").append($container);
       } else if (item["category_id"] == 4){
-        $("#pop").append($header);
-        $("#pop").append($footer);
+        $("section.pop").append($container);
       } else if (item["category_id"] == 5){
-        $("#wings").append($header);
-        $("#wings").append($footer);
+        $("section.wings").append($container);
       }
       // $("#menu_body").append($header);
       // $("#menu_body").append($p);
@@ -52,35 +50,35 @@ $(() => {
   $("section.pop").slideUp(1);
 
   $("button.pizza").click(function() {
-    $("section.pizza").slideToggle();
+    $("section.pizza").slideToggle(1);
     $("section.pasta").slideUp(1);
     $("section.burger").slideUp(1);
     $("section.wings").slideUp(1);
     $("section.pop").slideUp(1);
   })
   $("button.pasta").click(function() {
-    $("section.pasta").slideToggle();
+    $("section.pasta").slideToggle(1);
     $("section.pizza").slideUp(1);
     $("section.burger").slideUp(1);
     $("section.wings").slideUp(1);
     $("section.pop").slideUp(1);
   })
   $("button.burger").click(function() {
-    $("section.burger").slideToggle();
+    $("section.burger").slideToggle(1);
     $("section.pasta").slideUp(1);
     $("section.pizza").slideUp(1);
     $("section.wings").slideUp(1);
     $("section.pop").slideUp(1);
   })
   $("button.wings").click(function() {
-    $("section.wings").slideToggle();
+    $("section.wings").slideToggle(1);
     $("section.pasta").slideUp(1);
     $("section.burger").slideUp(1);
     $("section.pizza").slideUp(1);
     $("section.pop").slideUp(1);
   })
   $("button.pop").click(function() {
-    $("section.pop").slideToggle();
+    $("section.pop").slideToggle(1);
     $("section.pasta").slideUp(1);
     $("section.burger").slideUp(1);
     $("section.wings").slideUp(1);
