@@ -7,6 +7,7 @@ $(() => {
       var $header = $("<header>");
       // var $p = $("<p>");
       var $footer = $("<footer>");
+
       var $button = $(`<button type='submit' data-id='${item.id}' data-name='${item.name}' data-price='${item.price}'>`).addClass("add");
       var $buttonRemove = $(`<button type='submit' data-id='${item.id}' data-name='${item.name}' data-price='${item.price}'>`).addClass("remove");
       var $counter = $(`<span id='${item.id}' data-id='${item.id}' data-name='${item.name}' data-price='${item.price}'>`).addClass("item_counter");
@@ -86,6 +87,7 @@ $(() => {
     $("section.pizza").slideUp(1);
   })
 
+
   $("#menu_body").on("click", ".add", function (event) {
     event.preventDefault()
     var cart;
@@ -128,6 +130,7 @@ $(() => {
 
     if (cart[itemId].quantity > 1) {
       cart[itemId].quantity -= 1
+
       cart[itemId].price = (cart[itemId].quantity * itemPrice).toFixed(2);
       $(`span.item_counter#${itemId}`).html(cart[itemId].quantity);
     } else {
@@ -140,3 +143,4 @@ $(() => {
   })
 
 });
+
