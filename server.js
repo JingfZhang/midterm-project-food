@@ -26,6 +26,11 @@ const knex        = require("knex")(knexConfig[ENV]);
 const morgan      = require('morgan');
 const knexLogger  = require('knex-logger');
 
+// Twilio API
+const accountSid = "AC5844c3ec0221d9a8bcdc409ee3ea64b5";
+const authToken = "a61917927d79a5f1ad33d27fe296d430";
+const client = require('twilio')(accountSid, authToken);
+
 // Seperated Routes for each Resource
 const usersRoutes = require("./routes/menu");
 
