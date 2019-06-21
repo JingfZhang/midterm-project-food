@@ -5,9 +5,18 @@ $(document).ready(function() {
         let name = $("#name").val();
         let phone = $("#phone").val();
         if ( !name || !phone ) {
-            let $error = "Name or phone number cannot be empty";
+            let $error = "Name or Phone Number cannot be empty. Please enter both to proceed to confirmation page.";
             $(".error-message").text($error);
             $(".error-message").slideDown();
+        } else {
+            $.ajax({
+                method: 'POST',
+                url: "/checkout",
+                data: $(this).serialize(),
+                success: function() {
+                    window.location.href = "http://localhost:8080/confirm";
+                }
+            })            
         }
     })
 
