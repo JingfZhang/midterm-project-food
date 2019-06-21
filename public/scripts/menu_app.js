@@ -12,6 +12,13 @@ $(() => {
       var $buttonRemove = $(`<button type='submit' data-id='${item.id}' data-name='${item.name}' data-price='${item.price}'>`).addClass("remove");
       var $counter = $(`<span id='${item.id}' data-id='${item.id}' data-name='${item.name}' data-price='${item.price}'>`).addClass("item_counter");
 
+      if (JSON.parse(localStorage.getItem("cart"))[item.id]) {
+        console.log(JSON.parse(localStorage.getItem("cart"))[item.id].quantity)
+        $counter.html(JSON.parse(localStorage.getItem("cart"))[item.id].quantity);
+      } else {
+        $counter.html(0);
+      }
+
       $header.append(item["name"]);
       // $p.append(item["description"]);
       $header.append("     $" + item["price"]);
@@ -22,7 +29,8 @@ $(() => {
       $footer.append($buttonRemove);
       $container.append($header)
       $container.append($footer)
-      $(".item_counter").html(0);
+
+      // $(".item_counter").html(0);
 
       if(item["category_id"] == 1){
         $("section.pizza").append($container);
