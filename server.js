@@ -2,18 +2,6 @@
 
 require('dotenv').config();
 
-// const knex = require("knex")({
-//   client: "pg",
-//   connection: {
-//     user     : process.env.DB_USER,
-//     password : process.env.DB_PASS,
-//     database : process.env.DB_NAME,
-//     host     : process.env.DB_HOST,
-//     port     : process.env.DB_PORT,
-//     ssl      : process.env.DB_SSL
-//   },
-// });
-
 const PORT        = process.env.PORT || 8080;
 const ENV         = process.env.ENV || "development";
 const express     = require("express");
@@ -27,9 +15,13 @@ const morgan      = require('morgan');
 const knexLogger  = require('knex-logger');
 
 // Twilio API
-const accountSid = "AC5844c3ec0221d9a8bcdc409ee3ea64b5";
-const authToken = "a61917927d79a5f1ad33d27fe296d430";
-const client = require('twilio')(accountSid, authToken);
+const accountSidRest = "AC5844c3ec0221d9a8bcdc409ee3ea64b5";
+const authTokenRest = "efd1859a46d440866a5db285c59ba44a";
+const clientRest = require('twilio')(accountSidRest, authTokenRest);
+
+const accountSidCust = "AC3720ee9a4aad3a42b6e5376d78fc2156";
+const authTokenCust = "c929bb1400c7a23ad5699119dc920b7c";
+const clientCust = require('twilio')(accountSidCust, authTokenCust);
 
 // Seperated Routes for each Resource
 const usersRoutes = require("./routes/menu");
@@ -78,31 +70,38 @@ app.get("/checkout", (req, res) => {
 })
 
 // Confirmation page
-app.get("/confirm", (req, res) => {
-  // Send SMS to customer through Twilio
-  // client.messages
-  // .create({
-  //     body: 'Thank you for your purchase. It will take 30 minutes for the order to be ready.',
-  //     from: '+15067990251',
-  //     to: '+16476464578'
-  // })
-  // .then(message => console.log("This is a message for customer :" + message))
-
+app.get("/confirm", (req, res) => { 
   res.render("confirm");
 })
 
 // <-------------POST ROUTES------------------>
 
 app.post("/checkout", (req, res) => {
+
     // Send SMS to restaurant through Twilio
-    // client.messages
-    // .create({
-    //     body: 'You received a new order. Please check the app for order details.',
-    //     from: '+16042659409',
-    //     to: '+16477600143'
-    // })
-    // .then(message => console.log("This is a message for restaurant :" + message))
-  res.redirect("/confirm");
+    clientRest.messages
+    .create({
+        body: 'You received a new order. Please check the app for order details.',
+        from: '+15067990251',
+        to: '+16476464578'
+    })
+    .then(message => console.log(message.sid))
+    .catch(console.error)
+    .done();
+
+    // Send SMS to customer through Twilio
+    clientCust.messages
+    .create({
+        body: 'Thank you for your purchase. It will take 30 minutes for the order to be ready.',
+        from: '+16042659409',  
+        to: '+16477600143'
+    })
+    .then(message => console.log(message.sid))
+    .catch(console.error)    
+    .done();
+
+    req.session = null;
+    res.redirect("/confirm");
 })
 
 
