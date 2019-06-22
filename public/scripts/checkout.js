@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    $(".error-message").slideUp(1);
+
     $("#submit").on('click', function(event) {
         event.preventDefault();
         let name = $("#name").val();
@@ -16,8 +18,15 @@ $(document).ready(function() {
                 success: function() {
                     window.location.href = "http://localhost:8080/confirm";
                 }
-            })            
+            })
         }
+    })
+
+    $("#name").on("click", function() {
+      $(".error-message").slideUp();
+    })
+    $("#phone").on("click", function() {
+      $(".error-message").slideUp();
     })
 
 });

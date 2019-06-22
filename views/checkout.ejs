@@ -22,14 +22,18 @@
 
     <section class="checkout-container">
         <!-- <form id="checkout" method="POST" action="/checkout">  -->
+          <container class="name">
             <label for="name">Enter your name:</label>
-            <input class="form-control" type="text" id="name" placeholder="name" style="width: 300px; margin: 1em">
+            <input class="name-field" type="text" id="name" placeholder="name" style="width: 300px; margin: 1em">
+          </container>
+          <container class="phone">
             <label for="phone">Enter your phone number:</label>
-            <input class="form-control" type="number" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" style="width: 300px; margin: 1em">
-            <div><p class="error-message"></p></div>
-            <div>
-            <a href=/confirm><button id="submit" type="submit" class="btn btn-primary">SUBMIT</button></a>
-            </div>
+            <input class="phone-field" type="number" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" style="width: 300px; margin: 1em">
+          </container>
+          <section class="error">
+            <p class="error-message"></p>
+            <a href=/confirm><button id="submit" type="submit" class="btn btn-primary text-center">SUBMIT</button></a>
+          </section>
         <!-- </form>> -->
     </section>
 

@@ -2,12 +2,12 @@
 
   @mixin cart-button-style{
     width:20rem;
-    margin:2rem;    
+    margin:2rem;
     border:none;
     padding:1rem;
     font-size:2rem;
     font-family: $font-body;
-    
+
   }
 
 body#cart{
@@ -17,7 +17,7 @@ body#cart{
     font-weight: bold;
     font-size: 3rem;
   }
-  
+
   .container{
     font-family: $font-body;
     color:$nav-color;
@@ -30,7 +30,7 @@ body#cart{
     flex-direction: column;
       padding:1rem;
       border:1rem silid $nav-color;
-      
+
       .cart-item{
         padding:1rem;
         display:flex;
@@ -67,7 +67,7 @@ body#cart{
             text-align: right;
             flex:1;
           }
-        }  
+        }
       }
 
     }
@@ -81,20 +81,20 @@ body#cart{
     }
   }
 
-  .cart-buttons{
+  section.cart-buttons{
     text-align: center;
-    // border:none;
 
-    .clear-button{
+
+    #clear-order-button{
       @include cart-button-style;
       background: #B9314F;
       text-decoration: none;
 
-      
+
       // background-color:#B9314F;
     }
 
-    .checkout-button{
+    #checkout-button{
       @include cart-button-style;
       background-color:rgba(5, 19, 148, 0.746)
     }
