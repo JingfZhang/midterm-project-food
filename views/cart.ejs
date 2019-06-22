@@ -17,26 +17,24 @@
 
   </head>   
 
-  <body>
-    <!--Nav bar with logo-->
+  <body id="cart">
     <nav class="nav justify-content-between">
-        <a href="" class="nav-link nav-logo"> FOODALICIOUS</a>
-        <a href=/checkout><button id="checkout-button" type="submit">CHECKOUT</button></a>
+        <a href="/" class="nav-link nav-logo"> FOODELICIOUS</a>
     </nav>
-    
-    <div>
-        <a href=/menu><button id="clear-order-button" type="submit" class="btn btn-danger">CLEAR ORDERS</button></a>
-    </div>
-
-    <section id="cart-body">
+  
+    <h1>Your order</h1>
+    <section class="container">
+    <section id="cart-body" class="cart-items">
 
     </section>
-
-    <section>
-      <span>Total:$</span>
+    <div class="price">
+      <span>Total: $</span>
       <span class="total_price">0</span>
+    </div>
     </section>
-
-
+    <section class="cart-buttons">
+      <a href="/menu" id="clear-order-button" type="submit" class="btn btn-danger clear-button">CLEAR ORDERS</a>
+      <a href="/checkout" id="checkout-button"  type="submit" class="btn btn-primary checkout-button ">CHECKOUT</a>    
+    </section>
   </body>
 </html>
