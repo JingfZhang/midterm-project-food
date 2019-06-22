@@ -1,6 +1,6 @@
 // Twilio API
 const accountSid = "AC5844c3ec0221d9a8bcdc409ee3ea64b5";
-const authToken = "a61917927d79a5f1ad33d27fe296d430";
+const authToken = "efd1859a46d440866a5db285c59ba44a";
 const client = require('twilio')(accountSid, authToken);
 
 console.log(client);
