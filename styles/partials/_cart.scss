@@ -2,12 +2,12 @@
 
   @mixin cart-button-style{
     width:20rem;
-    margin:2rem;    
+    margin:2rem;
     border:none;
     padding:1rem;
     font-size:2rem;
     font-family: $font-body;
-    
+
   }
 
 body#cart{
@@ -16,6 +16,7 @@ body#cart{
     text-align: center;
     font-weight: bold;
     font-size: 3rem;
+
   } 
   .container{
     font-family: $font-body;
@@ -29,7 +30,7 @@ body#cart{
     flex-direction: column;
       padding:1rem;
       border:1rem silid $nav-color;
-      
+
       .cart-item{
         padding:1rem;
         display:flex;
@@ -66,7 +67,7 @@ body#cart{
             text-align: right;
             flex:1;
           }
-        }  
+        }
       }
 
     }
@@ -80,16 +81,17 @@ body#cart{
     }
   }
 
-  .cart-buttons{
+  section.cart-buttons{
     text-align: center;
 
-    .clear-button{
+
+    #clear-order-button{
       @include cart-button-style;
       background: $red;
       text-decoration: none;
     }
 
-    .checkout-button{
+    #checkout-button{
       @include cart-button-style;
       background-color:rgba(5, 19, 148, 0.746)
     }
