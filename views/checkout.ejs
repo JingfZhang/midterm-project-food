@@ -14,25 +14,26 @@
 
   </head>
 
-  <body>
+  <body id="checkout">
     <!--Nav bar with logo-->
     <nav class="nav justify-content-between">
         <a href=/ class="nav-link nav-logo"> FOODELICIOUS</a>
     </nav>
-
+    <h1>Contact Information</h1>
+    <p>Please type your </p>
     <section class="checkout-container">
-          <container class="name">
+          <div class="name">
             <label for="name">Enter your name:</label>
             <input class="name-field" type="text" id="name" placeholder="name" style="width: 300px; margin: 1em">
-          </container>
-          <container class="phone">
+          </div>
+          <div class="phone">
             <label for="phone">Enter your phone number:</label>
             <input class="phone-field" type="number" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" style="width: 300px; margin: 1em">
-          </container>
-          <section class="error">
+          </div>
+          <div class="error">
             <p class="error-message"></p>
             <a href=/confirm><button id="submit" type="submit" class="btn btn-primary text-center">SUBMIT</button></a>
-          </section>
+          </div>
     </section>
   </body>
 </html>

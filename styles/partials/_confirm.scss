@@ -1,10 +1,10 @@
-body {
+body#confirm {
     background-color: white;
     font-family: 'Roboto Condensed', sans-serif;
-    font-family: $font-logo;
+    font-family: $font-body;
 
     .confirm-container {
-        color: blue;
+        color: $primary-color;
     }
 
 }
