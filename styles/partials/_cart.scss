@@ -16,12 +16,11 @@ body#cart{
     text-align: center;
     font-weight: bold;
     font-size: 3rem;
-  }
-  
+  } 
   .container{
     font-family: $font-body;
     color:$nav-color;
-    width:50%;
+    width:70%;
     background-color: rgba(0,0,0,.6);
     height: 100%;
 
@@ -60,7 +59,7 @@ body#cart{
           justify-content: space-between;
           .btn-primary{
             flex:1;
-            background-color: #B9314F;
+            background-color: $red;
             border:none;
           }
           .item-price{
@@ -83,15 +82,11 @@ body#cart{
 
   .cart-buttons{
     text-align: center;
-    // border:none;
 
     .clear-button{
       @include cart-button-style;
-      background: #B9314F;
+      background: $red;
       text-decoration: none;
-
-      
-      // background-color:#B9314F;
     }
 
     .checkout-button{
