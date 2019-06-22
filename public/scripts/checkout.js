@@ -14,6 +14,7 @@ $(document).ready(function() {
                 url: "/checkout",
                 data: $(this).serialize(),
                 success: function() {
+                    localStorage.clear();
                     window.location.href = "http://localhost:8080/confirm";
                 }
             })            
