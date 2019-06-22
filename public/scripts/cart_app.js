@@ -6,17 +6,18 @@ $(() => {
     let cartItem = cart[item];
 
       let $container = `
-      <div class="item${item}">
-             <header class = "item_header">
-              
-               ${cartItem.name}
-               ${cartItem.quantity}
-             </header>
-             <footer class="remove">
-             <button type='submit' data-id='${item}' data-name='${cartItem.name}'>REMOVE</button>
-               <p>$${cartItem.price}</p>
-             </footer>
-      </div>
+          <div class="cart-item">
+            <header class="cart-item-header">
+                <span class = "item-name">${cartItem.name}</span>
+                <span class = "item-quantity">${cartItem.quantity}</span>
+            </header>
+            <footer class="remove cart-item-footer">
+              <button class = "btn btn-primary cart-remove-button" type='submit' data-id='${item}' data-name='${cartItem.name}'>
+                REMOVE
+              </button>
+              <span class = "item-price">$${cartItem.price}
+            </footer>
+          </div>
       `;
       $("#cart-body").append($container);
       $total = $total + parseFloat(cartItem.price)
@@ -24,7 +25,7 @@ $(() => {
     }
 
  //remove selected items in the cart 
-  $("#cart-body").on("click", ".remove", function (event) {
+  $("#cart-body .remove").on("click", function (event) {
     event.preventDefault();
    var cart = JSON.parse(localStorage.getItem("cart"))
    var itemId = $(event.target).data("id");
