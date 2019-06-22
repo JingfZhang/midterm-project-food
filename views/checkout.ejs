@@ -17,20 +17,33 @@
   <body>
     <!--Nav bar with logo-->
     <nav class="nav justify-content-between">
-        <a href=/ class="nav-link nav-logo"> FOODELICIOUS</a>
+        <a href="" class="nav-link nav-logo"> FOODALICIOUS</a>
     </nav>
 
     <section class="checkout-container">
-        <!-- <form id="checkout" method="POST" action="/checkout">  -->
+        <!-- <form id="checkout">  -->
             <label for="name">Enter your name:</label>
             <input class="form-control" type="text" id="name" placeholder="name" style="width: 300px; margin: 1em">
             <label for="phone">Enter your phone number:</label>
+            <!-- <input class="form-control" type="number" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" style="width: 300px; margin: 1em" required> -->
             <input class="form-control" type="number" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" style="width: 300px; margin: 1em">
             <div><p class="error-message"></p></div>
             <div>
-            <a href=/confirm><button id="submit" type="submit" class="btn btn-primary">SUBMIT</button></a>
+            <button id="submit" type="submit" class="btn btn-primary">SUBMIT</button>
             </div>
         <!-- </form>> -->
+    </section>
+
+    <section class="confirm-container">
+        <article class="article">
+            <header class="header">
+                <h3 class="text-center">Order Placed!</h3>
+            </header>
+            <div class="content text-center">
+                <h4>Thank You!</h4>
+                <h5>Your order will be ready in <strong>30 min</strong>.We will send your order detail via text message.</h5>
+            </div>
+        </article>
     </section>
 
   </body>
