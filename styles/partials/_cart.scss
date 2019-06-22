@@ -17,11 +17,11 @@ body#cart{
     font-weight: bold;
     font-size: 3rem;
 
-  } 
+  }
   .container{
     font-family: $font-body;
     color:$nav-color;
-    width:70%;
+    width:60%;
     background-color: rgba(0,0,0,.6);
     height: 100%;
 
@@ -59,7 +59,6 @@ body#cart{
           display:flex;
           justify-content: space-between;
           .btn-primary{
-            flex:1;
             background-color: $red;
             border:none;
           }
