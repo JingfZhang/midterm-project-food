@@ -4,6 +4,7 @@ $(() => {
     url: "/api/items"
   }).done((items) => {
     for(item of items) {
+      console.log(item)
       var $header = $("<header>");
       // var $p = $("<p>");
       var $container = $("<container>").addClass("container")
@@ -12,7 +13,7 @@ $(() => {
       var $buttonRemove = $(`<button type='submit' data-id='${item.id}' data-name='${item.name}' data-price='${item.price}'>`).addClass("remove");
       var $counter = $(`<span id='${item.id}' data-id='${item.id}' data-name='${item.name}' data-price='${item.price}'>`).addClass("item_counter");
 
-      if (JSON.parse(localStorage.getItem("cart"))[item.id]) {
+      if (JSON.parse(localStorage.getItem("cart")) != null && JSON.parse(localStorage.getItem("cart"))[item.id]) {
         console.log(JSON.parse(localStorage.getItem("cart"))[item.id].quantity)
         $counter.html(JSON.parse(localStorage.getItem("cart"))[item.id].quantity);
       } else {
