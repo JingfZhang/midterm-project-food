@@ -5,3 +5,6 @@ public/styles
 *.sqlite3
 package-lock.json
 **.DS_Store
+twilio/send_sms.js
+twilio/server.js
+
