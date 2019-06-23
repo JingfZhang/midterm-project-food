@@ -1,14 +1,11 @@
 
 
   @mixin cart-button-style{
-    width:20rem;
-    margin:2rem;
-    border:none;
-    padding:1rem;
     font-size:2rem;
-    font-family: $font-body;
-
+    background-color: white;
   }
+
+
 
 body#cart{
     font-family:$font-body;
@@ -43,6 +40,7 @@ body#cart{
           flex:1;
           display:flex;
           justify-content: space-between;
+          align-items: baseline;
 
           .item-name{
             text-align: left;
@@ -58,14 +56,22 @@ body#cart{
           flex: 1;
           display:flex;
           justify-content: space-between;
-          .btn-primary{
-            background-color: $red;
-            border:none;
-          }
           .item-price{
-            text-align: right;
+            text-align: center;
             flex:1;
           }
+          .btn-primary{
+            @include cart-button-style;
+            text-align: right;
+            border: 2px solid $red;
+            color: $red;
+            text-decoration: none;
+          }
+          .btn-primary:hover{
+            background-color: $red;
+            color:white;
+          }
+          
         }
       }
 
@@ -86,13 +92,25 @@ body#cart{
 
     #clear-order-button{
       @include cart-button-style;
-      background: $red;
+      margin: 2em;
+      border: 2px solid $red;
+      color: $red;
       text-decoration: none;
+    }
+    #clear-order-button:hover{
+      background-color: $red;
+      color:white;
     }
 
     #checkout-button{
       @include cart-button-style;
-      background-color:rgba(5, 19, 148, 0.746)
+      margin: 2em;
+      border: 2px solid #008CBA;
+      color: #008CBA;
+    }
+    #checkout-button:hover {
+      background-color: #008CBA; 
+      color: white;
     }
   }
 

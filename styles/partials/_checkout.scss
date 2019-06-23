@@ -23,7 +23,7 @@ body#checkout {
       flex-direction: column;
       width:50%;
       margin-left:25%;
-      padding: 2em;
+      padding: 1em;
 
       .name {
         flex:1;
@@ -65,7 +65,9 @@ body#checkout {
       .error {
         flex:1;
         display:flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        justify-items: baseline;
+        padding: 2em 0 2em 0;
 
 
         
@@ -76,22 +78,36 @@ body#checkout {
           font-weight: bold;
           font-style: italic;
           text-align: left;
+
         }
 
-        button {
+        .return-button {
+          flex:1;
+          font-size:2rem;
+          background-color: white;
+          border: 2px solid $button-color;
+          color: $button-color;
+          float:left;
+          margin: 1em;
+        }
+        .return-button:hover {
+          background-color: $button-color; 
+          color: white;
+        }
+
+        .submit-button {
           flex:1;
           font-size:2rem;
           background-color: white;
           border: 2px solid #008CBA;
           color: #008CBA;
           float:right;
-          margin: 20px;
+          margin: 1em;
         }
-        button:hover {
+        .submit-button:hover {
           background-color: #008CBA; 
           color: white;
         }
-
       }
     }
 
