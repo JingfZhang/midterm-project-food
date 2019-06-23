@@ -25,9 +25,9 @@ $(() => {
       $header.append("     $" + item["price"]);
       $button.append("+");
       $buttonRemove.append("-");
-      $footer.append($button);
-      $footer.append($counter);
       $footer.append($buttonRemove);
+      $footer.append($counter);
+      $footer.append($button);
       $container.append($header)
       $container.append($footer)
 
