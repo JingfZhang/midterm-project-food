@@ -12,11 +12,11 @@ $(() => {
                     <span class = "item-quantity">${cartItem.quantity}</span>
                 </header>
                 <footer class="remove cart-item-footer">
+                 <span class = "item-price">$${cartItem.price}
                   <button class ="btn btn-primary cart-remove-button" type='submit' data-id='${item}' data-name='${cartItem.name}'>
-                    REMOVE
+                    <i class="far fa-trash-alt"></i>
                   </button>
-                  <span class = "item-price">$${cartItem.price}
-                </footer>
+                 </footer>
               </div>
           `;
           $("#cart-body").append($container);
