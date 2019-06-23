@@ -5,6 +5,19 @@ body#confirm {
 
     .confirm-container {
         color: $primary-color;
+
+        h3{
+            font-size: 3rem;
+        }
+
+        h4{
+            font-size:2rem;
+        }
+
+        h5{
+            font-size:2rem;
+        }
     }
+
 
 }
