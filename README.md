@@ -1,5 +1,14 @@
 # FOODELICIOUS
 
+Foodelicious is a food-order website for pick-up.
+
+You can choose food from the menu and put them in the cart.
+Once you have picked the food and entered your contact information, you will get notified via SMS how long it will take the food to be ready.
+
+The web app uses Twilio API to communicate with the restaurant (SMS text) about a new order placed. The restaurant can reply with the amount of time needed for the order to be ready. This time will be then sent to the final user via SMS.
+
+All you have to do is to wait and pick up the food :slightly_smiling_face:
+
 ## Project Setup
 
 1. Create your own empty repo on GitHub
