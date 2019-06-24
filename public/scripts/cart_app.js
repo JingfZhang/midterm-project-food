@@ -13,7 +13,7 @@ $(() => {
                 </header>
                 <footer class="cart-item-footer">
                  <span class = "item-price">$${cartItem.price}</span>
-                 <i class ="far fa-trash-alt btn btn-primary cart-remove-button" type='submit' data-id='${item}' data-name='${cartItem.name}'>
+                 <i class ="far fa-trash-alt btn btn-primary cart-remove-button" data-id='${item}' data-name='${cartItem.name}'>
                  </i>
                  </footer>
               </div>
