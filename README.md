@@ -58,6 +58,6 @@
 
 !["Screenshot of Confirm Page"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Confirm_page.png)
 
-!["Screenshot of Message Screenshot"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Message_screenshot.png)
+!["Screenshot of Message Screenshot"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Message_screenshot.jpg)
 
-!["Screenshot of Message Screenshot 2"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Message_screenshot2.png)
+!["Screenshot of Message Screenshot 2"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Message_screenshot2.jpg)
