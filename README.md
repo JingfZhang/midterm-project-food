@@ -37,7 +37,7 @@
 
 ## Screenshots
 !["Screenshot of Home Page"]
-(https://github.com/JingfZhang/midteof Home Pagem-project-food/blob/master/docs/Home_page.png "Home Page")
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Home_page.png)
 
 !["Screenshot of Menu Page"]
 (https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_main.png)
