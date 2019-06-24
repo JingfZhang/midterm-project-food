@@ -52,9 +52,9 @@
 
 !["Screenshot of Checkout Page"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Checkout_page.png)
 
-!["Screenshot of Info_Page"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Info_page.png)
-
 !["Screenshot of Info Page with Error"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Info_error.png)
+
+!["Screenshot of Info_Page"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Info_page.png)
 
 !["Screenshot of Confirm Page"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Confirm_page.png)
 
