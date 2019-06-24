@@ -37,7 +37,7 @@
 
 ## Screenshots
 !["Screenshot of compose section slided up"]
-(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Home_page.png)
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Home_page.png "Home Page")
 
 !["Screenshot of compose section slided up"]
 (https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_main.png)
