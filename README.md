@@ -57,3 +57,7 @@
 !["Screenshot of Info Page with Error"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Info_error.png)
 
 !["Screenshot of Confirm Page"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Confirm_page.png)
+
+!["Screenshot of Message Screenshot"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Message_screenshot.png)
+
+!["Screenshot of Message Screenshot 2"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Message_screenshot2.png)
