@@ -36,35 +36,24 @@
 -twilio: 3.32
 
 ## Screenshots
-!["Screenshot of Home Page"]
-(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Home_page.png)
+!["Screenshot of Home Page"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Home_page.png)
 
-!["Screenshot of Menu Page"]
-(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_main.png)
+!["Screenshot of Menu Page"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_main.png)
 
-!["Screenshot of Pizza Menu"]
-(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_pizza.png)
+!["Screenshot of Pizza Menu"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_pizza.png)
 
-!["Screenshot of Pasta Menu"]
-(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_pasta.png)
+!["Screenshot of Pasta Menu"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_pasta.png)
 
-!["Screenshot of Burger Menu"]
-(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_burger.png)
+!["Screenshot of Burger Menu"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_burger.png)
 
-!["Screenshot of Wings Menu"]
-(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_wings.png)
+!["Screenshot of Wings Menu"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_wings.png)
 
-!["Screenshot of Beverage Menu"]
-(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_beverage.png)
+!["Screenshot of Beverage Menu"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_beverage.png)
 
-!["Screenshot of Checkout Page"]
-(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Checkout_page.png)
+!["Screenshot of Checkout Page"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Checkout_page.png)
 
-!["Screenshot of Info_Page"]
-(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Info_page.png)
+!["Screenshot of Info_Page"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Info_page.png)
 
-!["Screenshot of Info Page with Error"]
-(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Info_error.png)
+!["Screenshot of Info Page with Error"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Info_error.png)
 
-!["Screenshot of Confirm Page"]
-(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Confirm_page.png)
+!["Screenshot of Confirm Page"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Confirm_page.png)
