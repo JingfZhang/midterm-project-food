@@ -24,6 +24,47 @@
 8. Visit `http://localhost:8080/`
 
 ## Dependencies
+-body-parser: 1.15.2
+-dotenv: 2.0.0
+-ejs: 2.4.1
+-express: 4.17.1
+-knex: 0.11.7
+-knex-logger: 0.1.0
+-morgan: 1.7.0
+-node-sass-middleware: 0.9.8
+-pg: 6.0.2
+-twilio: 3.32
 
-- Node 5.10.x or above
-- NPM 3.8.x or above
+## Screenshots
+!["Screenshot of compose section slided up"]
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Home_page.png)
+
+!["Screenshot of compose section slided up"]
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_main.png)
+
+!["Screenshot of compose section slided up"]
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_pizza.png)
+
+!["Screenshot of compose section slided up"]
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_pasta.png)
+
+!["Screenshot of compose section slided up"]
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_burger.png)
+
+!["Screenshot of compose section slided up"]
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_wings.png)
+
+!["Screenshot of compose section slided up"]
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Menu_beverage.png)
+
+!["Screenshot of compose section slided up"]
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Checkout_page.png)
+
+!["Screenshot of compose section slided up"]
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Info_page.png)
+
+!["Screenshot of compose section slided up"]
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Info_error.png)
+
+!["Screenshot of compose section slided up"]
+(https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Confirm_page.png)
