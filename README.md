@@ -60,4 +60,4 @@
 
 !["Screenshot of Message Screenshot"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Message_screenshot.jpg)
 
-!["Screenshot of Message Screenshot 2"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Message_screenshot2.jpg)
+!["Screenshot of Message Screenshot 2"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Message_screenshot2.png)
