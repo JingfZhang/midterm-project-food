@@ -24,16 +24,16 @@
 8. Visit `http://localhost:8080/`
 
 ## Dependencies
--body-parser: 1.15.2
--dotenv: 2.0.0
--ejs: 2.4.1
--express: 4.17.1
--knex: 0.11.7
--knex-logger: 0.1.0
--morgan: 1.7.0
--node-sass-middleware: 0.9.8
--pg: 6.0.2
--twilio: 3.32
+- body-parser: 1.15.2
+- dotenv: 2.0.0
+- ejs: 2.4.1
+- express: 4.17.1
+- knex: 0.11.7
+- knex-logger: 0.1.0
+- morgan: 1.7.0
+- node-sass-middleware: 0.9.8
+- pg: 6.0.2
+- twilio: 3.32
 
 ## Screenshots
 !["Screenshot of Home Page"](https://github.com/JingfZhang/midterm-project-food/blob/master/docs/Home_page.png)
