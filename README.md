@@ -9,6 +9,11 @@ The web app uses Twilio API to communicate with the restaurant (SMS text) about 
 
 All you have to do is to wait and pick up the food :slightly_smiling_face:
 
+## Team Members
+- Asuka Kuwahara
+- Jingfan Zhang
+- Poushita Guha
+
 ## Project Setup
 
 1. Create your own empty repo on GitHub
